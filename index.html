@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nevyera — Craft Your Digital Future</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Animated Background -->
+  <div class="bg-canvas">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="orb orb-4"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ═══════════ NAVBAR ═══════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-icon"><i class="fa-solid fa-hexagon-nodes"></i></span>
+        <span class="logo-text">Nevyera</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#portfolio" class="nav-link">Work</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn-nav">Get Started</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-badge fade-up">
+        <span class="badge-dot"></span>
+        Next-Gen Software Studio
+      </div>
+      <h1 class="hero-title fade-up">
+        We Build <span class="gradient-text">Digital</span><br />
+        Products That <span class="gradient-text">Scale</span>
+      </h1>
+      <p class="hero-sub fade-up">
+        From SaaS platforms to enterprise CRMs — Nevyera engineers software that transforms businesses and delights users.
+      </p>
+      <div class="hero-cta fade-up">
+        <a href="#services" class="btn-primary">Explore Services <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#portfolio" class="btn-ghost">View Our Work</a>
+      </div>
+      <div class="hero-stats fade-up">
+        <div class="stat-item">
+          <span class="stat-num" data-target="120">0</span><span>+</span>
+          <span class="stat-label">Projects Delivered</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="98">0</span><span>%</span>
+          <span class="stat-label">Client Satisfaction</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="6">0</span><span>+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual fade-right">
+      <div class="glass-card floating" id="floatCard1">
+        <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
+        <div class="card-info">
+          <span class="card-title">Revenue Up</span>
+          <span class="card-val">+240%</span>
+        </div>
+      </div>
+      <div class="hero-device">
+        <div class="device-screen">
+          <div class="screen-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          </div>
+          <div class="screen-body">
+            <div class="code-line"><span class="kw">const</span> future = <span class="fn">nevyera</span>();</div>
+            <div class="code-line"><span class="kw">await</span> future.<span class="fn">build</span>(<span class="str">'your-dream'</span>);</div>
+            <div class="code-line"><span class="cm">// Shipping in 3... 2... 1...</span></div>
+            <div class="code-line blink"><span class="success">✓ Deployed successfully</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="glass-card floating-delay" id="floatCard2">
+        <div class="card-icon green"><i class="fa-solid fa-shield-check"></i></div>
+        <div class="card-info">
+          <span class="card-title">Uptime SLA</span>
+          <span class="card-val">99.9%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SERVICES ═══════════ -->
+  <section class="services" id="services">
+    <div class="section-header">
+      <div class="section-tag">What We Do</div>
+      <h2 class="section-title">Services Built for <span class="gradient-text">Scale</span></h2>
+      <p class="section-sub">End-to-end digital solutions — from ideation to deployment and beyond.</p>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card reveal">
+        <div class="service-glow"></div>
+        <div class="service-icon"><i class="fa-solid fa-layer-group"></i></div>
+        <h3>SaaS Platform Development</h3>
+        <p>Scalable, subscription-based cloud platforms engineered for growth — multi-tenant, secure, and production-ready from day one.</p>
+        <ul class="service-list">
+          <li><i class="fa-solid fa-check"></i> Multi-tenant architecture</li>
+          <li><i class="fa-solid fa-check"></i> Subscription billing integration</li>
+          <li><i class="fa-solid fa-check"></i> Role-based access control</li>
+        </ul>
+        <a href="#contact" class="service-link">Get a Quote <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-glow purple"></div>
+        <div class="service-icon purple"><i class="fa-solid fa-people-group"></i></div>
+        <h3>Lead Pro CRM</h3>
+        <p>Intelligent CRM systems that supercharge your sales pipeline — track leads, automate follow-ups, and close faster.</p>
+        <ul class="service-list">
+          <li><i class="fa-solid fa-check"></i> Smart lead scoring</li>
+          <li><i class="fa-solid fa-check"></i> Automated workflows</li>
+          <li><i class="fa-solid fa-check"></i> Analytics & reporting</li>
+        </ul>
+        <a href="#contact" class="service-link">Get a Quote <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-glow cyan"></div>
+        <div class="service-icon cyan"><i class="fa-solid fa-users-gear"></i></div>
+        <h3>HRM Systems</h3>
+        <p>Complete Human Resource Management solutions — from onboarding and payroll to performance tracking and attendance.</p>
+        <ul class="service-list">
+          <li><i class="fa-solid fa-check"></i> Employee lifecycle management</li>
+          <li><i class="fa-solid fa-check"></i> Payroll automation</li>
+          <li><i class="fa-solid fa-check"></i> Attendance & leave tracking</li>
+        </ul>
+        <a href="#contact" class="service-link">Get a Quote <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-glow amber"></div>
+        <div class="service-icon amber"><i class="fa-solid fa-grid-2"></i></div>
+        <h3>Management Systems</h3>
+        <p>Custom ERP and management portals tailored to your operations — inventory, projects, finance, and more in one place.</p>
+        <ul class="service-list">
+          <li><i class="fa-solid fa-check"></i> Inventory & supply chain</li>
+          <li><i class="fa-solid fa-check"></i> Project management</li>
+          <li><i class="fa-solid fa-check"></i> Financial dashboards</li>
+        </ul>
+        <a href="#contact" class="service-link">Get a Quote <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-glow pink"></div>
+        <div class="service-icon pink"><i class="fa-solid fa-code"></i></div>
+        <h3>Custom Software</h3>
+        <p>Bespoke software solutions built exactly around your business logic — no off-the-shelf compromises, just precision engineering.</p>
+        <ul class="service-list">
+          <li><i class="fa-solid fa-check"></i> Domain-specific solutions</li>
+          <li><i class="fa-solid fa-check"></i> API & third-party integration</li>
+          <li><i class="fa-solid fa-check"></i> Legacy system modernization</li>
+        </ul>
+        <a href="#contact" class="service-link">Get a Quote <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-glow teal"></div>
+        <div class="service-icon teal"><i class="fa-solid fa-palette"></i></div>
+        <h3>Website Design & Dev</h3>
+        <p>Conversion-optimized, visually stunning websites — from landing pages to full web apps, crafted to impress and perform.</p>
+        <ul class="service-list">
+          <li><i class="fa-solid fa-check"></i> UI/UX design & prototyping</li>
+          <li><i class="fa-solid fa-check"></i> Responsive development</li>
+          <li><i class="fa-solid fa-check"></i> SEO & performance tuning</li>
+        </ul>
+        <a href="#contact" class="service-link">Get a Quote <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════ ABOUT ═══════════ -->
+  <section class="about" id="about">
+    <div class="about-grid">
+      <div class="about-visual">
+        <div class="about-img-wrap reveal">
+          <div class="about-blob"></div>
+          <div class="about-panel glass-panel">
+            <div class="panel-row">
+              <i class="fa-solid fa-rocket panel-icon"></i>
+              <div>
+                <div class="panel-val">120+</div>
+                <div class="panel-key">Projects Shipped</div>
+              </div>
+            </div>
+          </div>
+          <div class="about-panel glass-panel panel-bottom">
+            <div class="panel-row">
+              <i class="fa-solid fa-star panel-icon gold"></i>
+              <div>
+                <div class="panel-val">5.0</div>
+                <div class="panel-key">Average Rating</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-content reveal">
+        <div class="section-tag">Who We Are</div>
+        <h2 class="section-title">Engineering the <span class="gradient-text">Future</span>, One Product at a Time</h2>
+        <p class="about-text">Nevyera is a product-minded software studio. We partner with startups and enterprises to design, develop, and deploy digital products that create lasting impact. Our team blends technical excellence with creative thinking to build software that doesn't just work — it <em>wins</em>.</p>
+        <p class="about-text">We don't believe in one-size-fits-all. Every engagement starts with deep understanding of your goals, your users, and your growth trajectory.</p>
+        <div class="about-pillars">
+          <div class="pillar">
+            <i class="fa-solid fa-bolt"></i>
+            <span>Agile Delivery</span>
+          </div>
+          <div class="pillar">
+            <i class="fa-solid fa-lock"></i>
+            <span>Enterprise Security</span>
+          </div>
+          <div class="pillar">
+            <i class="fa-solid fa-infinity"></i>
+            <span>Scalable Architecture</span>
+          </div>
+          <div class="pillar">
+            <i class="fa-solid fa-headset"></i>
+            <span>Dedicated Support</span>
+          </div>
+        </div>
+        <a href="#contact" class="btn-primary">Work With Us <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ PORTFOLIO ═══════════ -->
+  <section class="portfolio" id="portfolio">
+    <div class="section-header">
+      <div class="section-tag">Our Work</div>
+      <h2 class="section-title">Selected <span class="gradient-text">Projects</span></h2>
+      <p class="section-sub">A glimpse of what we've built for forward-thinking companies.</p>
+    </div>
+    <div class="portfolio-filter">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="saas">SaaS</button>
+      <button class="filter-btn" data-filter="crm">CRM</button>
+      <button class="filter-btn" data-filter="web">Website</button>
+      <button class="filter-btn" data-filter="hrm">HRM</button>
+    </div>
+    <div class="portfolio-grid" id="portfolioGrid">
+
+      <div class="portfolio-card reveal" data-category="saas">
+        <div class="port-img">
+          <div class="port-overlay">
+            <div class="port-icons">
+              <i class="fa-solid fa-layer-group"></i>
+            </div>
+          </div>
+          <div class="port-mock saas-mock">
+            <div class="mock-header"></div>
+            <div class="mock-sidebar"></div>
+            <div class="mock-content">
+              <div class="mock-bar w80"></div>
+              <div class="mock-bar w60"></div>
+              <div class="mock-chart"></div>
+            </div>
+          </div>
+        </div>
+        <div class="port-info">
+          <span class="port-tag">SaaS Platform</span>
+          <h3>NexFlow Analytics</h3>
+          <p>Real-time business analytics SaaS with AI-driven insights for 10,000+ users.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card reveal" data-category="crm">
+        <div class="port-img">
+          <div class="port-overlay">
+            <div class="port-icons">
+              <i class="fa-solid fa-people-group"></i>
+            </div>
+          </div>
+          <div class="port-mock crm-mock">
+            <div class="mock-header"></div>
+            <div class="mock-body">
+              <div class="mock-card-sm"></div>
+              <div class="mock-card-sm"></div>
+              <div class="mock-card-sm"></div>
+            </div>
+          </div>
+        </div>
+        <div class="port-info">
+          <span class="port-tag crm">Lead Pro CRM</span>
+          <h3>SalesEdge CRM</h3>
+          <p>End-to-end CRM with pipeline automation, reducing sales cycles by 35%.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card reveal" data-category="hrm">
+        <div class="port-img">
+          <div class="port-overlay">
+            <div class="port-icons">
+              <i class="fa-solid fa-users-gear"></i>
+            </div>
+          </div>
+          <div class="port-mock hrm-mock">
+            <div class="mock-header"></div>
+            <div class="mock-table">
+              <div class="mock-row"></div>
+              <div class="mock-row"></div>
+              <div class="mock-row"></div>
+            </div>
+          </div>
+        </div>
+        <div class="port-info">
+          <span class="port-tag hrm">HRM System</span>
+          <h3>PeopleCore HRM</h3>
+          <p>Complete HR suite managing 500+ employees across 3 countries.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card reveal" data-category="web">
+        <div class="port-img">
+          <div class="port-overlay">
+            <div class="port-icons">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+          </div>
+          <div class="port-mock web-mock">
+            <div class="mock-nav-bar"></div>
+            <div class="mock-hero-section"></div>
+            <div class="mock-cards-row">
+              <div class="mock-mini-card"></div>
+              <div class="mock-mini-card"></div>
+              <div class="mock-mini-card"></div>
+            </div>
+          </div>
+        </div>
+        <div class="port-info">
+          <span class="port-tag web">Website</span>
+          <h3>LuxBrand Studio</h3>
+          <p>Premium brand website with immersive animations, boosting conversions 80%.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════ TESTIMONIALS ═══════════ -->
+  <section class="testimonials" id="testimonials">
+    <div class="section-header">
+      <div class="section-tag">Testimonials</div>
+      <h2 class="section-title">What Clients <span class="gradient-text">Say</span></h2>
+    </div>
+    <div class="testi-track" id="testiTrack">
+      <div class="testi-card glass-card-full">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p class="testi-quote">"Nevyera built our SaaS platform from scratch in 4 months. The team's communication, quality, and attention to detail was exceptional. Best tech partner we've ever worked with."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">AR</div>
+          <div>
+            <strong>Aryan Rao</strong>
+            <span>CEO, NexFlow Inc.</span>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card glass-card-full">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p class="testi-quote">"The Lead Pro CRM they built cut our sales cycle by 40%. The automation features alone saved us 20 hours a week. Incredibly responsive team, always ready to help."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">SM">SM</div>
+          <div>
+            <strong>Sneha Mehta</strong>
+            <span>Sales Director, EdgeSales</span>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card glass-card-full">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p class="testi-quote">"Our HRM system was delivered on time and on budget. The UI is gorgeous and the team loved it from day one. Nevyera understands both technical and business requirements."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">PK</div>
+          <div>
+            <strong>Priya Kapoor</strong>
+            <span>HR Manager, PeopleCore</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-dots" id="testiDots">
+      <span class="dot active" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+    </div>
+  </section>
+
+  <!-- ═══════════ CONTACT ═══════════ -->
+  <section class="contact" id="contact">
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <div class="section-tag">Let's Talk</div>
+        <h2 class="section-title">Ready to Build <span class="gradient-text">Something Great?</span></h2>
+        <p class="contact-sub">Tell us about your project. We'll get back within 24 hours with a tailored plan.</p>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <span class="c-label">Email</span>
+              <span class="c-val">hello@nevyera.com</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="c-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <span class="c-label">Phone</span>
+              <span class="c-val">+91 98765 43210</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="c-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <span class="c-label">Location</span>
+              <span class="c-val">Haryana, India</span>
+            </div>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="#" class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="social-btn"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="social-btn"><i class="fa-brands fa-github"></i></a>
+          <a href="#" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="contact-form-wrap reveal">
+        <form class="contact-form glass-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Full Name</label>
+              <input type="text" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" placeholder="john@company.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Service Interested In</label>
+            <select>
+              <option value="">Select a service</option>
+              <option>SaaS Platform Development</option>
+              <option>Lead Pro CRM</option>
+              <option>HRM System</option>
+              <option>Management System</option>
+              <option>Custom Software</option>
+              <option>Website Design & Dev</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Project Budget</label>
+            <select>
+              <option value="">Select budget range</option>
+              <option>₹50K – ₹1L</option>
+              <option>₹1L – ₹5L</option>
+              <option>₹5L – ₹20L</option>
+              <option>₹20L+</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Tell Us About Your Project</label>
+            <textarea rows="4" placeholder="Describe your idea, goals, timeline..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-full">
+            Send Message <i class="fa-solid fa-paper-plane"></i>
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="fa-solid fa-circle-check"></i> Message sent! We'll reply within 24 hours.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          <span class="logo-icon"><i class="fa-solid fa-hexagon-nodes"></i></span>
+          <span class="logo-text">Nevyera</span>
+        </a>
+        <p>Engineering digital futures with precision, creativity, and purpose.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="#services">SaaS Development</a>
+          <a href="#services">Lead Pro CRM</a>
+          <a href="#services">HRM Systems</a>
+          <a href="#services">Management Systems</a>
+          <a href="#services">Custom Software</a>
+          <a href="#services">Website Design</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#about">About Us</a>
+          <a href="#portfolio">Our Work</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <a href="#">LinkedIn</a>
+          <a href="#">Twitter / X</a>
+          <a href="#">GitHub</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Nevyera. All rights reserved.</span>
+      <span>Crafted with <i class="fa-solid fa-heart" style="color:#f43f5e"></i> in India</span>
+    </div>
+  </footer>
+
+  <script src="nevyera.js"></script>
+</body>
+</html>
